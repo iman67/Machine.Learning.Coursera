@@ -65,7 +65,7 @@ print("Residual sum of squares (MSE): %.2f" % np.mean((test_y_ - test_y) ** 2))
 print("R2-score: %.2f" % r2_score(test_y , test_y_) )
 
 train_x = train[["FUELCONSUMPTION_COMB"]]
-test_x = train[["FUELCONSUMPTION_COMB"]]
+test_x = test[["FUELCONSUMPTION_COMB"]]
 
 regr = linear_model.LinearRegression()
 regr.fit(train_x, train_y)
